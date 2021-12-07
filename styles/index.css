@@ -61,6 +61,12 @@ nav {
     height: 100%;
 }
 
+.logo p {
+    color: var(--col-main);
+    text-align: center;
+    padding: 20px;
+}
+
 .links {
     color: var(--col-main);
     font-size: 1.5rem;
