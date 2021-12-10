@@ -18,35 +18,42 @@
 /* AFSNIT MED VIDEO */
 
 .afsnit1 {
-  display: flex;
-  padding-top: 10%;
+  display: grid;
+  padding-top: 7%;
   background-color: #fffaf5;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .box_1 {
-  width: 60%;
-  height: 450px;
+  /* width: 60%;
+  height: 450px; */
   background-color: #fff1e1;
-  padding: 0 20px 20px;
   outline: 1px dashed magenta;
+  grid-column: 1/4;
+  grid-row: 1/5;
+  object-fit: cover;
 }
 
 iframe {
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
 img,
 video {
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .video1 {
   object-fit: cover;
-  grid-column: 2/3;
+  grid-column: 3/6;
+  grid-row: 2/6;
+  padding-right: 2%;
 }
 
 .afsnit2 {
