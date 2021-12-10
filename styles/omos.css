@@ -1,0 +1,56 @@
+.intro {
+  width: 100%;
+  height: 8%;
+  background-image: url(/img/Appelsiner.webp);
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.introtekst {
+  object-fit: cover;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 55pt;
+  color: #1a40aa;
+  grid-column: 2/4;
+}
+
+/* AFSNIT MED VIDEO */
+
+.afsnit1 {
+  display: flex;
+  padding-top: 10%;
+  background-color: #fffaf5;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.box_1 {
+  width: 60%;
+  height: 450px;
+  background-color: #fff1e1;
+  padding: 0 20px 20px;
+  outline: 1px dashed magenta;
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+img,
+video {
+  width: 70%;
+  height: 70%;
+}
+
+.video1 {
+  object-fit: cover;
+  grid-column: 2/3;
+}
+
+.afsnit2 {
+  display: flex;
+  padding-top: 10%;
+  background-color: #fffaf5;
+}
