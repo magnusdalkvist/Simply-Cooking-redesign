@@ -224,6 +224,13 @@ footer {
 
 
 
+    /* burger-menu */
+    #menu {
+        display: none;
+    }
+
+
+
     /* footer style web */
     footer {
         justify-items: end;

@@ -16,7 +16,7 @@ main {
     background-color: unset;
 }
 
-#web, #mobile {
+#web {
     transition: .5s;
 }
 
@@ -49,6 +49,10 @@ main {
 .nocolor .nav_wrapper a:hover:after {
     width: 100%;
     transition: 0.5s;
+}
+
+.openMenu {
+    stroke: red;
 }
 
 .splash_container {
