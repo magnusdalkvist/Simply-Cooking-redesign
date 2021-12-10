@@ -6,11 +6,13 @@
 #login {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   background-color: #aabbbf;
   padding: 30px;
 }
 
 #login h4 {
+  padding-top: 15px;
   color: #fff;
   text-transform: none;
   font-family: lemonde-sans, sans-serif;
@@ -50,4 +52,10 @@
 .input_text {
   height: 30px;
   width: 240px;
+}
+
+#reviews {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(7, 1fr);
 }
