@@ -127,7 +127,7 @@ nav.mobile .nav_logo_container {
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     left: 0;
     background-color: #FFF1E1;
@@ -209,7 +209,7 @@ footer {
     }
 
     nav.web .nav_wrapper {
-        padding: 20px 20px;
+        padding: 10px 20px;
         display: flex;
         max-width: 1250px;
         margin: 0 auto;
@@ -218,7 +218,7 @@ footer {
     }
     
     nav.web .nav_logo_container {
-        height: 100px;
+        height: 80px;
     }
 
 

@@ -47,19 +47,6 @@ nav a:hover:after {
     transition: 0.5s;
 }
 
-nav.web .nav_wrapper {
-    padding: 10px 20px;
-    display: flex;
-    max-width: 1250px;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav.web .nav_logo_container {
-    height: 80px;
-}
-
 .splash_container {
     display: grid;
     height: 100vh;
