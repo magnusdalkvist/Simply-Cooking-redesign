@@ -211,7 +211,7 @@ footer {
     }
 
     nav.web .nav_wrapper {
-        padding: 20px 20px;
+        padding: 10px 20px;
         display: flex;
         max-width: 1250px;
         margin: 0 auto;
@@ -220,7 +220,7 @@ footer {
     }
     
     nav.web .nav_logo_container {
-        height: 60px;
+        height: 80px;
     }
 
 
