@@ -58,14 +58,14 @@ a:hover {
 nav a {
     padding: 5px;
     font-family: lemonde-sans, sans-serif;
-    color: #131D22;
+    color: #FFF1E1;
     font-weight: normal;
     height: auto;
     position: relative;
 }
 
 nav a:hover {
-    color: #131D22;
+    color: #FFF1E1;
 }
 
 nav a:after {
@@ -77,7 +77,7 @@ nav a:after {
 		left: 0;
         right: 0;
 		width: 0;
-		background: #707070;
+		background: #FFF1E1;
         transition: 0.5s;
 }
 
@@ -92,7 +92,7 @@ header {
 }
 
 nav {
-    background-color: #FFF1E1;
+    background-color: none;
 }
 
 nav.mobile {
