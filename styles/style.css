@@ -1,5 +1,3 @@
-@import url("https://use.typekit.net/ccx7ktm.css");
-
 body {
     margin: 0;
 }
@@ -93,23 +91,24 @@ header {
 
 nav {
     background-color: #FFF1E1;
+    transition: .5;
 }
 
-nav.mobile {
+nav#mobile {
     display: block;
 }
 
-nav.web {
+nav#web {
     display: none;
 }
 
-nav.mobile .nav_wrapper {
+nav#mobile .nav_wrapper {
     padding: 7.5px 20px;
     display: flex;
     justify-content: space-between;
 }
 
-nav.mobile .nav_logo_container {
+nav#mobile .nav_logo_container {
     height: 40px;
 }
 
@@ -129,7 +128,7 @@ nav.mobile .nav_logo_container {
     height: 0%;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     left: 0;
     background-color: #FFF1E1;
@@ -202,16 +201,16 @@ footer {
 
 @media (min-width: 1000px) {
     /* nav style web */  
-    nav.mobile {
+    nav#mobile {
         display: none;
     }
 
-    nav.web {
+    nav#web {
         display: block;
     }
 
-    nav.web .nav_wrapper {
-        padding: 20px 20px;
+    nav#web .nav_wrapper {
+        padding: 10px 20px;
         display: flex;
         max-width: 1250px;
         margin: 0 auto;
@@ -219,8 +218,15 @@ footer {
         align-items: center;
     }
     
-    nav.web .nav_logo_container {
-        height: 100px;
+    nav#web .nav_logo_container {
+        height: 80px;
+    }
+
+
+
+    /* burger-menu */
+    #menu {
+        display: none;
     }
 
 
