@@ -30,7 +30,7 @@ main {
   margin: 0%;
 }
 
-#knap_wrapper {
+#uge_knap {
   grid-column: 5/6;
   grid-row: 2/3;
   object-position: center;
@@ -43,7 +43,8 @@ main {
   overflow-x: visible;
   justify-content: end;
   font-size: 3.5em;
-  opacity: 50%;
+  /* opacity: 50%; */
+  color: #fde9d1;
   margin: 0%;
 }
 
