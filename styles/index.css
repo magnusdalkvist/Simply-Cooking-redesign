@@ -1,0 +1,13 @@
+body {
+    display: grid;
+}
+
+main {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+header {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
