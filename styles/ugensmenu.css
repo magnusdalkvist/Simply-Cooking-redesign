@@ -31,9 +31,32 @@ main {
 }
 
 #uge_knap {
-  grid-column: 5/6;
+  grid-column: 4/6;
   grid-row: 2/3;
-  object-position: center;
+}
+
+#knap_tekst {
+  font-family: freight-display-pro, serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #1a40aa;
+}
+
+.arrow {
+  border: solid #1a40aa;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 #uge_nummer {
@@ -42,7 +65,7 @@ main {
   display: flex;
   overflow-x: visible;
   justify-content: end;
-  font-size: 3.5em;
+  font-size: 3.25em;
   /* opacity: 50%; */
   color: #fde9d1;
   margin: 0%;
@@ -53,9 +76,6 @@ main {
   grid-row: 2/3;
   background-color: white;
   padding: 2%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
 }
 
