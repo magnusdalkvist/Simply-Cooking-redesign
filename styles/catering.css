@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+#login {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #aabbbf;
+  padding: 30px;
+}
+
+#login h4 {
+  color: #fff;
+  text-transform: none;
+  font-family: lemonde-sans, sans-serif;
+  font-weight: normal;
+}
+
+.eksisterende_bruger {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.ny_bruger {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input_text {
+  padding: 5px;
+  border: solid 1px #95acb14f;
+  box-shadow: inset 0px 0px 4px hsla(0, 0%, 0%, 0.16);
+  color: #92b1b8;
+  font-family: lemonde-sans, sans-serif;
+}
+.input_text::placeholder {
+  color: #92b1b8;
+}
+
+.knap {
+  background-color: #698f80;
+  font-family: lemonde-sans, sans-serif;
+  color: #fff;
+  border: none;
+}
+
+.knap,
+.input_text {
+  height: 30px;
+  width: 240px;
+}

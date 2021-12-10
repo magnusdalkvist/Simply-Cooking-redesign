@@ -8,5 +8,110 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/catering.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="mobile">
+        <div class="nav_wrapper">
+          <div class="nav_logo_container">
+            <img src="img/logo.svg" alt="" class="nav_logo" />
+          </div>
+          <img src="img/burgermenu.svg" class="openMenu" alt="" />
+        </div>
+      </nav>
+      <nav class="web">
+        <div class="nav_wrapper">
+          <div class="nav_logo_container">
+            <img src="img/logo.svg" alt="" class="nav_logo" />
+          </div>
+          <div class="nav_content">
+            <a href="index.html">Kantinen</a>
+            <a href="about.html">Om os</a>
+            <a href="catering.html">Catering</a>
+            <a href="contact.html">Kontakt</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="login">
+        <div class="eksisterende_bruger">
+          <h4>Log ind</h4>
+          <label for="brugernavn"
+            ><input
+              type="text"
+              placeholder="Brugernavn eller email"
+              class="brugernavn input_text"
+          /></label>
+          <label for="password">
+            <input
+              type="password"
+              placeholder="Password"
+              class="password input_text"
+          /></label>
+          <button type="submit" class="knap">Log ind</button>
+        </div>
+
+        <div class="ny_bruger">
+          <h4>Eller registrér</h4>
+          <label for="email">
+            <input type="text" placeholder="Email" class="email input_text"
+          /></label>
+          <button type="submit" class="knap">Registrer</button>
+        </div>
+      </section>
+      <section id="reviews"></section>
+    </main>
+    <footer>
+      <div class="footer_logo_container">
+        <img class="footer_logo" src="/img/logo.svg" alt="" />
+      </div>
+      <div class="footer_wrapper">
+        <div class="footer_content_container">
+          <h4>Kontakt</h4>
+          <address>
+            <p>
+              Trykkeriet<br />
+              Guldbergsgade 29 E,<br />
+              2200 København N<br />
+              46 46 02 90<br />
+              <a href="mailto:trykkeriet@simplycooking.dk"
+                >trykkeriet@simplycooking.dk</a
+              >
+            </p>
+          </address>
+        </div>
+        <div class="footer_content_container">
+          <h4>Åbningstider</h4>
+          <p>
+            <b>Kantinen</b><br />
+            Mandag til fredag kl. <time>8.00</time> - <time>14.00</time
+            ><br /><br />
+            <b>Caféen</b><br />
+            Mandag til fredag kl. <time>9.00</time> - <time>16.00</time> (fredag
+            <time>15.30</time>)
+          </p>
+        </div>
+        <div class="footer_content_container">
+          <h4>Vilkår</h4>
+          <div class="footer_links">
+            <a href="">Bestilling</a>
+            <a href="">Afbestilling</a>
+            <a href="">Betaling</a>
+            <a href="">Afhentning og Levering</a>
+            <a href="">Personale</a>
+            <a href="">Klagemulighed</a>
+          </div>
+        </div>
+        <div class="footer_content_container">
+          <h4>Smileyordning</h4>
+          <div class="footer_links">
+            <a href="">Smiley</a>
+            <a href="">Trykkeriet</a>
+          </div>
+        </div>
+        <div class="rights">Redesign af Gruppe 8 - KEA</div>
+      </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
