@@ -12,11 +12,15 @@ main {
     
 }
 
-nav {
+.nocolor {
     background-color: unset;
 }
 
-nav a {
+#web {
+    transition: .5s;
+}
+
+.nocolor .nav_wrapper a {
     padding: 5px;
     font-family: lemonde-sans, sans-serif;
     color: #FFF1E1;
@@ -25,11 +29,11 @@ nav a {
     position: relative;
 }
 
-nav a:hover {
+.nocolor .nav_wrapper a:hover {
     color: #FFF1E1;
 }
 
-nav a:after {
+.nocolor .nav_wrapper a:after {
     position: absolute;
         content: '';
         height: 2px;
@@ -42,9 +46,13 @@ nav a:after {
         transition: 0.5s;
 }
 
-nav a:hover:after {
+.nocolor .nav_wrapper a:hover:after {
     width: 100%;
     transition: 0.5s;
+}
+
+.openMenu {
+    stroke: red;
 }
 
 .splash_container {
