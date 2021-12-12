@@ -50,6 +50,19 @@ a:hover {
     color: #FFE294;
 }
 
+a.button {
+    font-family: source-sans-pro, sans-serif;
+    background-color: #698F80;
+    padding: 5px 50px;
+    color: white;
+    font-size: 1rem;
+}
+
+a.button:hover {
+    background-color: #AABFB6;
+}
+
+
 
 
 /* nav style */
@@ -87,6 +100,7 @@ nav a:hover:after {
 header {
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 
 nav {
@@ -212,7 +226,7 @@ footer {
     nav#web .nav_wrapper {
         padding: 10px 20px;
         display: flex;
-        max-width: 1250px;
+        max-width: 1210px;
         margin: 0 auto;
         justify-content: space-between;
         align-items: center;
