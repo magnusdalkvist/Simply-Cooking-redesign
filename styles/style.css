@@ -103,7 +103,7 @@ header {
 
 nav {
   background-color: #fff1e1;
-  transition: 0.5;
+  transition: 0.5s;
 }
 
 nav.mobile {
@@ -112,6 +112,7 @@ nav.mobile {
 
 nav.web {
   display: none;
+  transition: 0.5;
 }
 
 nav.mobile .nav_wrapper {
