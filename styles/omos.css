@@ -30,7 +30,6 @@
 
 .box_1 {
   background-color: #fff1e1;
-  outline: 1px dashed magenta;
   grid-column: 1/4;
   height: 100%;
   grid-row: 1;
@@ -54,6 +53,7 @@ video {
 
 .omostekst {
   padding: 0 4%;
+  padding-left: 20%;
   grid-column: 1/3;
   grid-row: 1;
 }
@@ -75,7 +75,47 @@ h3 {
 }
 
 .afsnit2 {
-  display: flex;
-  padding-top: 10%;
+  display: grid;
+  padding-top: 7%;
   background-color: #fffaf5;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+
+.box_2 {
+  background-color: #fff1e1;
+  grid-column: 2/6;
+  height: 100%;
+  grid-row: 1;
+}
+
+/* img {
+  max-width: 100%;
+  grid-column: 3/6;
+  padding-right: 2%;
+  grid-row: 1;
+} */
+
+.kontakttekst {
+  padding: 0 4%;
+  padding-left: 20%;
+  grid-column: 1/3;
+  grid-row: 1;
+}
+
+h2 {
+  color: #e97020;
+}
+
+h3 {
+  padding-top: 2%;
+  color: #1a40aa;
+}
+
+.p3 {
+  padding-top: 2%;
+}
+.p4 {
+  padding-top: 2%;
 }
