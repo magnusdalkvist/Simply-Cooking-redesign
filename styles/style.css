@@ -82,7 +82,7 @@ a.button:hover {
   position: absolute;
   content: "";
   height: 2px;
-  bottom: 2px;
+  bottom: 1px;
   margin: 0 auto;
   left: 0;
   right: 0;
