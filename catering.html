@@ -11,58 +11,58 @@
     <link rel="stylesheet" href="https://use.typekit.net/css2cto.css" />
   </head>
   <body>
-   <!-- fælles nav start -->
-   <div id="menu">
-    <nav id="mobile">
+    <!-- fælles nav start -->
+    <div id="menu">
+      <nav class="mobile">
         <div class="nav_wrapper">
-            <div class="nav_logo_container">
-                <img src="img/logo.svg" alt="" class="nav_logo" />
-            </div>
-            <img src="img/cross.svg" class="closeMenu" alt="" />
+          <div class="nav_logo_container">
+            <img src="img/logo.svg" alt="" class="nav_logo" />
+          </div>
+          <img src="img/cross.svg" class="closeMenu" alt="" />
         </div>
         <div class="menu_content">
-            <a href="index.html">
-                <h2>Forside</h2>
-            </a>
-            <img src="img/menu_br.svg" class="menu_br" alt="" />
-            <a href="ugensmenu.html">
-                <h2>Ugens menu</h2>
-            </a>
-            <img src="img/menu_br.svg" class="menu_br" alt="" />
-            <a href="catering.html">
-                <h2>Bestil catering</h2>
-            </a>
-            <img src="img/menu_br.svg" class="menu_br" alt="" />
-            <a href="omos.html">
-                <h2>Om kantinen</h2>
-            </a>
+          <a href="index.html">
+            <h2>Forside</h2>
+          </a>
+          <img src="img/menu_br.svg" class="menu_br" alt="" />
+          <a href="ugensmenu.html">
+            <h2>Ugens menu</h2>
+          </a>
+          <img src="img/menu_br.svg" class="menu_br" alt="" />
+          <a href="catering.html">
+            <h2>Bestil catering</h2>
+          </a>
+          <img src="img/menu_br.svg" class="menu_br" alt="" />
+          <a href="omos.html">
+            <h2>Om kantinen</h2>
+          </a>
         </div>
-    </nav>
-</div>
-<header>
-    <nav id="mobile">
+      </nav>
+    </div>
+    <header>
+      <nav class="mobile">
         <div class="nav_wrapper">
-            <div class="nav_logo_container">
-                <img src="img/logo.svg" alt="" class="nav_logo" />
-            </div>
-            <img src="img/burgermenu.svg" class="openMenu" alt="" />
+          <div class="nav_logo_container">
+            <img src="img/logo.svg" alt="" class="nav_logo" />
+          </div>
+          <img src="img/burgermenu.svg" class="openMenu" alt="" />
         </div>
-    </nav>
-    <nav id="web" class="nocolor">
+      </nav>
+      <nav class="web nocolor">
         <div class="nav_wrapper">
-            <div class="nav_logo_container">
-                <img src="img/logo.svg" alt="" class="nav_logo" />
-            </div>
-            <div class="nav_content">
-                <a href="index.html">Forside</a>
-                <a href="ugensmenu.html">Ugens menu</a>
-                <a href="catering.html">Bestil catering</a>
-                <a href="omos.html">Om kantinen</a>
-            </div>
+          <div class="nav_logo_container">
+            <img src="img/logo.svg" alt="" class="nav_logo" />
+          </div>
+          <div class="nav_content">
+            <a href="index.html">Forside</a>
+            <a href="ugensmenu.html">Ugens menu</a>
+            <a href="catering.html">Bestil catering</a>
+            <a href="omos.html">Om kantinen</a>
+          </div>
         </div>
-    </nav>
-</header>
-<!-- fælles nav slut -->
+      </nav>
+    </header>
+    <!-- fælles nav slut -->
     <div id="banner"><h1 id="bannertekst">Bestil Catering</h1></div>
     <main>
       <section id="login">
@@ -73,12 +73,14 @@
               type="text"
               placeholder="Brugernavn eller email"
               class="brugernavn input_text"
+              id="brugernavn"
           /></label>
           <label for="password">
             <input
               type="password"
               placeholder="Password"
               class="password input_text"
+              id="password"
           /></label>
           <button type="submit" class="knap">Log ind</button>
         </div>
@@ -86,7 +88,11 @@
         <div class="ny_bruger">
           <h4>Eller registrér</h4>
           <label for="email">
-            <input type="text" placeholder="Email" class="email input_text"
+            <input
+              type="text"
+              placeholder="Email"
+              class="email input_text"
+              id="email"
           /></label>
           <button type="submit" class="knap">Registrer</button>
         </div>
@@ -96,14 +102,21 @@
         <div class="box blue"></div>
         <div class="review_box">
           <h4>Hvad siger kunderne?</h4>
-          <p>Herrefrokost KEA GBG 2018<br />
+          <p>
+            Herrefrokost KEA GBG 2018<br />
             <br />
             Hej Marc,<br />
             <br /><i>
-            Den delikate mad og den meget professionelle betjening gjorde det uhyre let at være vært. Tak for at følge mine gæster og mig så opmærksomt, tæt og diskret, at ingen lagde mærke til, at det ikke var mig, der stod for det hele. Dagen blev som jeg ønskede den. På gensyn!<br />
-            De bedste hilsner,</i></p>
-                            </blockquote>
-                            <cite>Claus</cite>
+              Den delikate mad og den meget professionelle betjening gjorde det
+              uhyre let at være vært. Tak for at følge mine gæster og mig så
+              opmærksomt, tæt og diskret, at ingen lagde mærke til, at det ikke
+              var mig, der stod for det hele. Dagen blev som jeg ønskede den. På
+              gensyn!<br />
+              De bedste hilsner,</i
+            >
+          </p>
+
+          <cite>Claus</cite>
         </div>
         <div class="img1">
           <img src="img/croissant.webp" alt="En croissant" />
@@ -111,6 +124,7 @@
         <div class="img2"><img src="img/dild.webp" alt="Et bundt dild" /></div>
       </section>
     </main>
+    <!-- fælles footer start -->
     <footer>
       <div class="footer_logo_container">
         <img class="footer_logo" src="/img/logo.svg" alt="" />
@@ -134,11 +148,11 @@
           <h4>Åbningstider</h4>
           <p>
             <b>Kantinen</b><br />
-            Mandag til fredag kl. <time>8.00</time> - <time>14.00</time
+            Mandag til fredag kl. <time>08:00</time> - <time>14:00</time
             ><br /><br />
             <b>Caféen</b><br />
-            Mandag til fredag kl. <time>9.00</time> - <time>16.00</time> (fredag
-            <time>15.30</time>)
+            Mandag til fredag kl. <time>09:00</time> -
+            <time>16:00</time> (fredag <time>15:30</time>)
           </p>
         </div>
         <div class="footer_content_container">
@@ -162,6 +176,7 @@
         <div class="rights">Redesign af Gruppe 8 - KEA</div>
       </div>
     </footer>
+    <!-- fælles footer slut -->
     <script src="scripts/script.js"></script>
     <script src="scripts/carousel.js"></script>
   </body>
