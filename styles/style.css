@@ -64,7 +64,7 @@ a.button:hover {
 }
 
 /* nav style */
-nav a {
+.nav_content a {
   padding: 5px;
   font-family: lemonde-sans, sans-serif;
   color: #131d22;
@@ -73,11 +73,11 @@ nav a {
   position: relative;
 }
 
-nav a:hover {
+.nav_content a:hover {
   color: #131d22;
 }
 
-nav a:after {
+.nav_content a:after {
   position: absolute;
   content: "";
   height: 2px;
@@ -90,7 +90,7 @@ nav a:after {
   transition: 0.5s;
 }
 
-nav a:hover:after {
+.nav_content a:hover:after {
   width: 100%;
   transition: 0.5s;
 }
