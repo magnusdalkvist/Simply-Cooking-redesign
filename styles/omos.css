@@ -175,7 +175,7 @@ h3 {
   }
 
   .billede1 {
-    background-image: url(/img/neon.png);
+    background-image: url(/img/neon.webp);
     aspect-ratio: 16/9;
     background-size: contain;
   }
