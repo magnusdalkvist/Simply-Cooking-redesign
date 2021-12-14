@@ -252,6 +252,7 @@ footer {
   }
   .footer_content_container {
     text-align: left;
+    padding: 10px;
   }
   .rights {
     grid-column: 4/5;

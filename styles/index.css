@@ -65,11 +65,12 @@ p {
   grid-column: 2/3;
   grid-row: 2/3;
   z-index: 2;
-  font-size: 30px;
 }
 
 .splash_text h1 {
   margin: 0;
+  font-size: 60px;
+  color: #fff1e1;
 }
 
 video {
@@ -162,6 +163,33 @@ video {
   background-image: url("/img/croissant.webp");
 }
 
+.background {
+  display: none;
+  width: 100%;
+  height: 100%;
+  grid-column: 2/5;
+  grid-row: 1;
+  border: solid #1a40aa 2px;
+}
+
+.slides {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+}
+  
+input[type=radio] {
+  display: none;
+}
+
+.size_reference {
+  display: none;
+}
+
 @media (min-width: 800px) {
   .splash_text {
     font-size: 40px;
@@ -238,4 +266,57 @@ video {
     grid-row: 1/2;
     justify-self: stretch;
   }
+
+  .slides {
+    position: relative;
+    gap: 0;
+    grid-template-columns: repeat(5,1fr);
+    width: 100%;
+    height: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .background {
+    display: block;
+  }
+  
+  .card {
+    grid-column: 2/5;
+    grid-row: 1;
+    position: absolute;
+    width: 50%;
+    transition: 1s;
+  }
+  
+  #item-1:checked ~  #img3, #item-2:checked ~  #img1, #item-3:checked ~  #img2 {
+    transform: translateX(-100%) scale(75%);
+    filter:brightness(50%) blur(2px);
+    z-index: 1;
+  }
+  
+  #item-1:checked ~  #img2, #item-2:checked ~  #img3, #item-3:checked ~  #img1 {
+    transform: translateX(100%) scale(75%);
+    filter:brightness(50%) blur(2px);
+    z-index: 2;
+  }
+  
+  #item-1:checked ~  #img1, #item-2:checked ~  #img2, #item-3:checked ~  #img3 {
+    transform: translatex(0) scale(100%);
+    filter:brightness(100%) blur(0px);
+    z-index: 3;
+  }
+  
+  .size_reference {
+    display: block;
+    opacity: 0;
+    width: 100%;
+    grid-column: 2/5;
+    grid-row: 1;
+  }
 }
+
+
+
