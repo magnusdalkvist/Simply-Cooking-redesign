@@ -53,7 +53,7 @@ p {
   stroke: red;
 }
 
-.splash_container {
+#splash {
   display: grid;
   height: 100vh;
   overflow: hidden;
@@ -118,18 +118,18 @@ video {
   margin: 0;
 }
 
-.content,
+#content,
 .weekly,
 .catering {
   display: grid;
   gap: 20px;
 }
 
-.content {
+#content {
   padding: 20px;
 }
 
-.content h1 {
+#content h1 {
   font-size: 30px;
 }
 
@@ -172,7 +172,7 @@ video {
   border: solid #1a40aa 2px;
 }
 
-.slides {
+#slides {
   display: grid;
   gap: 20px;
   padding: 20px;
@@ -199,7 +199,7 @@ input[type=radio] {
     gap: 0;
   }
 
-  .content {
+  #content {
     padding: 100px 0;
     gap: 100px;
   }
@@ -267,7 +267,7 @@ input[type=radio] {
     justify-self: stretch;
   }
 
-  .slides {
+  #slides {
     position: relative;
     gap: 0;
     grid-template-columns: repeat(5,1fr);
