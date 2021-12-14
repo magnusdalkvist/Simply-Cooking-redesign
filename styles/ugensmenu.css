@@ -174,7 +174,7 @@ p {
     font-size: 1.5em;
   }
   #menu_uger {
-    grid-column: 3/6;
+    grid-column: 4/6;
     grid-row: 4/5;
   }
 }
