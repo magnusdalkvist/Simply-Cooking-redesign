@@ -84,6 +84,7 @@ main {
   background-color: #fff1e1;
   overflow: hidden;
   position: absolute;
+  margin-top: 2%;
 }
 
 #menu_uger p,
