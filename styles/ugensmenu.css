@@ -19,6 +19,7 @@ main {
   grid-row: 1/2;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto 32px;
   background-color: white;
   padding: 2%;
 }
@@ -26,18 +27,21 @@ main {
 #menu_overskrift {
   grid-column: 1/2;
   grid-row: 2/3;
-  font-size: 3em;
+  font-size: 2em;
   margin: 0%;
 }
 
 #uge_knap {
   grid-column: 4/6;
-  grid-row: 2/3;
+  grid-row: 3/4;
+  height: fit-content;
+  text-align: center;
+  border-bottom: 0.5px solid #1a40aa;
 }
 
 #knap_tekst {
   font-family: freight-display-pro, serif;
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: 300;
   color: #1a40aa;
 }
@@ -51,13 +55,7 @@ main {
 }
 
 .up {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-}
-
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+  transform: rotate(-180deg);
 }
 
 #jan_uger,
@@ -79,6 +77,8 @@ main {
 }
 
 #menu_uger {
+  grid-column: 1/6;
+  grid-row: 4/5;
   text-align: center;
   background-color: #fff1e1;
 }
@@ -87,18 +87,18 @@ main {
 h2 {
   padding: 1%;
 }
-
-.hide {
+.uger {
   display: none;
+}
+.show {
+  display: block;
 }
 
 #uge_nummer {
-  grid-column: 3/7;
+  grid-column: 3/6;
   grid-row: 1/2;
-  display: flex;
-  overflow-x: visible;
-  justify-content: end;
-  font-size: 3.25em;
+  text-align: end;
+  font-size: 2em;
   /* opacity: 50%; */
   color: #fde9d1;
   margin: 0%;
@@ -109,7 +109,19 @@ h2 {
   grid-row: 2/3;
   background-color: white;
   padding: 2%;
+  padding-bottom: 8%;
   text-align: center;
+}
+#ugen h2 {
+  font-size: 1em;
+}
+
+#ugen p {
+  font-size: 0.8em;
+}
+#ugen img {
+  padding-top: 2.5%;
+  padding-bottom: 3%;
 }
 p {
   font-weight: 300;
@@ -124,7 +136,16 @@ p {
     padding-left: 15%;
   }
   #ugen h2 {
-    font-size: 3em;
+    font-size: 2.5em;
+  }
+  #ugen p {
+    font-size: 1.25em;
+    padding: 1%;
+  }
+
+  #ugen img {
+    padding-top: 2.5%;
+    padding-bottom: 3%;
   }
   #banner {
     width: 100%;
@@ -138,5 +159,18 @@ p {
     font-size: 55pt;
     color: #fdf2d3;
     text-align: center;
+  }
+
+  #uge_knap {
+    grid-column: 5/6;
+    grid-row: 3/4;
+  }
+
+  #knap_tekst {
+    font-size: 1.5em;
+  }
+  #menu_uger {
+    grid-column: 3/6;
+    grid-row: 4/5;
   }
 }
