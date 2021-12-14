@@ -60,6 +60,38 @@ main {
   -webkit-transform: rotate(45deg);
 }
 
+#jan_uger,
+#feb_uger,
+#mar_uger,
+#apr_uger,
+#maj_uger,
+#jun_uger,
+#jul_uger,
+#aug_uger,
+#sep_uger,
+#okt_uger,
+#nov_uger,
+#dec_uger {
+  background-color: #fffaf5;
+  color: #1a40aa;
+  text-align: end;
+  text-transform: uppercase;
+}
+
+#menu_uger {
+  text-align: center;
+  background-color: #fff1e1;
+}
+
+#menu_uger p,
+h2 {
+  padding: 1%;
+}
+
+.hide {
+  display: none;
+}
+
 #uge_nummer {
   grid-column: 3/7;
   grid-row: 1/2;
