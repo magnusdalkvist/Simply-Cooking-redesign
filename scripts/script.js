@@ -9,13 +9,30 @@ function closeMenu() {
   document.querySelector("#menu").style.height = "0%";
 }
 
-// funktioner til 'Vælg Uge'-knap under Ugens Menu
-// let uger = document.querySelector(".uger");
-// uger.classList.add(".hide_uge");
-// console.log("gemuger");
-
-document.querySelector("#jan").addEventListener("toggle", openJan);
-function openJan() {
-  console.log("click jan");
-  document.querySelector("jan_uger").classList.remove(".hide");
+// funktion der går at du kan trykke på vælg-uge-knappen
+const menu = document.querySelector("#menu_uger");
+const pil = document.querySelector(".arrow");
+function toggleMenu() {
+  console.log("click vælg uge");
+  menu.classList.toggle("show");
+  pil.classList.toggle("up");
 }
+
+document.querySelector("#uge_knap").addEventListener("click", toggleMenu);
+
+// funktion der gør at du kan klikke på en måned og der så kommer uge nr. frem
+const ugerJan = document.querySelector("#jan_uger");
+function toggleJan() {
+  console.log("click jan");
+  ugerJan.classList.toggle("show");
+}
+
+document.querySelector("#jan").addEventListener("click", toggleJan);
+
+const ugerFeb = document.querySelector("#feb_uger");
+function toggleFeb() {
+  console.log("click feb");
+  ugerFeb.classList.toggle("show");
+}
+
+document.querySelector("#feb").addEventListener("click", toggleFeb);
