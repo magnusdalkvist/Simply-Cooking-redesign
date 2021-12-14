@@ -123,14 +123,14 @@
 
 /* Farver */
 
-h2 {
+/* h2 {
   color: #e97020;
 }
 
 h3 {
   padding-top: 2%;
   color: #1a40aa;
-}
+} */
 
 /* MOBIL VERSIONEN !!!!! */
 
@@ -201,7 +201,7 @@ h3 {
     padding-top: 9%;
   }
 
-  .footer_wrapper {
+  /* .footer_wrapper {
     font-size: 70%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -209,5 +209,5 @@ h3 {
   }
   .footer_logo_container {
     max-width: 70%;
-  }
+  } */
 }
