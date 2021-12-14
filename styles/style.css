@@ -134,6 +134,9 @@ nav.mobile .nav_logo_container {
   display: flex;
   gap: 50px;
 }
+.nav_content a {
+  text-transform: uppercase;
+}
 
 /* burger-menu */
 #menu {
