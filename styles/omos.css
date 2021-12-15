@@ -182,7 +182,7 @@ h3 {
 
   .kontakttekst {
     padding: 4%;
-    text-align: center;
+    /* text-align: center; */
     font-size: 70%;
   }
 
