@@ -69,7 +69,7 @@
       </nav>
     </header>
     <!-- fælles nav slut -->
-    <div id="banner"><h1 id="bannertekst">Bestil Catering</h1></div>
+    <!-- <div id="banner"><h1 id="bannertekst">Bestil Catering</h1></div> -->
     <main>
       <section id="login">
         <div class="login_flex">
@@ -107,29 +107,76 @@
       </section>
       <section id="reviews">
         <div class="box green"></div>
-        <div class="box green2"></div>
-        <div class="review_box">
-          <h4>Hvad siger kunderne?</h4>
-          <p>
-            Herrefrokost KEA GBG 2018<br />
-            <br />
-            Hej Marc,<br />
-            <br /><i>
-              Den delikate mad og den meget professionelle betjening gjorde det
-              uhyre let at være vært. Tak for at følge mine gæster og mig så
-              opmærksomt, tæt og diskret, at ingen lagde mærke til, at det ikke
-              var mig, der stod for det hele. Dagen blev som jeg ønskede den. På
-              gensyn!<br />
-              De bedste hilsner,</i
-            >
-          </p>
+        <div id="review_box">
+          <input type="radio" name="review_box" id="slide1" checked />
+          <input type="radio" name="review_box" id="slide2" />
+          <input type="radio" name="review_box" id="slide3" />
+          <input type="radio" name="review_box" id="slide4" />
+          <div id="slides">
+            <div id="overflow">
+              <h4>Hvad siger kunderne?</h4>
+              <div class="inner">
+                <div class="slide slide_1">
+                  <div class="slide-content">
+                    <p>Herrefrokost KEA GBG 2018</p>
+                    <p>Hej Marc,</p>
+                    <p>
+                      Den delikate mad og den meget professionelle betjening
+                      gjorde det uhyre let at være vært. Tak for at følge mine
+                      gæster og mig så opmærksomt, tæt og diskret, at ingen
+                      lagde mærke til, at det ikke var mig, der stod for det
+                      hele. Dagen blev som jeg ønskede den. På gensyn!<br />
+                      De bedste hilsner,
+                    </p>
+                    <p>Claus</p>
+                  </div>
+                </div>
+                <div class="slide slide_2">
+                  <div class="slide-content">
+                    <p>Kokkeskole arrangement KEA GBG</p>
+                    <p>Hej Marc,</p>
+                    <p>
+                      Super godt arrangement. Som er blevet anbefalet til mange.
+                      <br />God weekend
+                    </p>
+                    <p>Med venlig hilsen Lasse</p>
+                  </div>
+                </div>
+                <div class="slide slide_3">
+                  <div class="slide-content">
+                    <p>Kokkeskole arrangement KEA</p>
+                    <p>Hej Marc,</p>
+                    <p>
+                      Det var en rigtig fin aften, hvor vi fik bygget videre på
+                      sammenholdet i teamet.
+                      <br />
+                      Med venlig hilsen / Kind Regards
+                    </p>
+                    <p>Peter</p>
+                  </div>
+                </div>
+                <div class="slide slide_4">
+                  <div class="slide-content">
+                    <p>Arrangement på KEA</p>
+                    <p>Hej Marc</p>
+                    <p>
+                      Vi havde et supergodt arrangement – mange tak. <br />Igen,
+                      tak for god forplejning.
+                    </p>
+                    <p>Venlig hilsen Mikkel</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-          <cite>Claus</cite>
+          <div id="bullets">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+          </div>
         </div>
-        <div class="img1">
-          <img src="img/lampe_bred.webp" alt="En croissant" />
-        </div>
-        <div class="img2"><img src="img/dild.webp" alt="Et bundt dild" /></div>
       </section>
     </main>
     <!-- fælles footer start -->
