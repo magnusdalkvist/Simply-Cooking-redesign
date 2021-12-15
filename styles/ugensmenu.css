@@ -140,7 +140,7 @@ p {
 
 @media (min-width: 800px) {
   #uge_nummer {
-    font-size: 6em;
+    font-size: 5em;
   }
 
   #menu_overskrift {
@@ -191,5 +191,8 @@ p {
   #menu_uger {
     grid-column: 4/6;
     grid-row: 4/5;
+  }
+  #uge_nummer {
+    font-size: 6em;
   }
 }
