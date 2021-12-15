@@ -131,7 +131,7 @@ p {
   font-weight: 300;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 600px) {
   #menu_uger {
     grid-column: 3/6;
     grid-row: 4/5;
@@ -140,7 +140,7 @@ p {
 
 @media (min-width: 800px) {
   #uge_nummer {
-    font-size: 6em;
+    font-size: 5em;
   }
 
   #menu_overskrift {
@@ -182,7 +182,17 @@ p {
     font-size: 1.5em;
   }
   #menu_uger {
+    grid-column: 3/6;
+    grid-row: 4/5;
+  }
+}
+
+@media (min-width: 1000px) {
+  #menu_uger {
     grid-column: 4/6;
     grid-row: 4/5;
+  }
+  #uge_nummer {
+    font-size: 6em;
   }
 }

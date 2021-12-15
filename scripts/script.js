@@ -12,6 +12,15 @@ function closeMenu() {
 // funktion der går at du kan trykke på vælg-uge-knappen
 const menu = document.querySelector("#menu_uger");
 const pil = document.querySelector(".arrow");
+
+window.addEventListener("load", sidenVises);
+
+function sidenVises() {
+  console.log("sidenVises");
+  menu.classList.remove("show");
+  pil.classList.remove("up");
+}
+
 function toggleMenu() {
   console.log("click vælg uge");
   menu.classList.toggle("show");
