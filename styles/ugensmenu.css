@@ -131,7 +131,7 @@ p {
   font-weight: 300;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 600px) {
   #menu_uger {
     grid-column: 3/6;
     grid-row: 4/5;
@@ -181,6 +181,13 @@ p {
   #knap_tekst {
     font-size: 1.5em;
   }
+  #menu_uger {
+    grid-column: 3/6;
+    grid-row: 4/5;
+  }
+}
+
+@media (min-width: 1000px) {
   #menu_uger {
     grid-column: 4/6;
     grid-row: 4/5;
