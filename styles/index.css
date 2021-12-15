@@ -64,7 +64,7 @@ p {
 .splash_text {
   grid-column: 1;
   grid-row: 2/3;
-  z-index: 2; 
+  z-index: 2;
   width: 100%;
   max-width: 1250px;
   padding: 20px;
@@ -72,7 +72,7 @@ p {
 
 .splash_text h1 {
   margin: 0;
-  font-size:35px;
+  font-size: 35px;
   color: #fff1e1;
   max-width: 17ch;
 }
@@ -185,8 +185,8 @@ video {
 .card img {
   width: 100%;
 }
-  
-input[type=radio] {
+
+input[type="radio"] {
   display: none;
 }
 
@@ -201,7 +201,7 @@ input[type=radio] {
 
   .splash_text h1 {
     padding: 0;
-    font-size:60px;
+    font-size: 60px;
   }
 
   .weekly,
@@ -281,7 +281,7 @@ input[type=radio] {
   #slides {
     position: relative;
     gap: 0;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     width: 100%;
     height: 100%;
     max-width: 1250px;
@@ -289,11 +289,11 @@ input[type=radio] {
     align-items: center;
     justify-items: center;
   }
-  
+
   .background {
     display: block;
   }
-  
+
   .card {
     grid-column: 2/5;
     grid-row: 1;
@@ -301,25 +301,31 @@ input[type=radio] {
     width: 50%;
     transition: 1s;
   }
-  
-  #item-1:checked ~  #img3, #item-2:checked ~  #img1, #item-3:checked ~  #img2 {
+
+  #item-1:checked ~ #img3,
+  #item-2:checked ~ #img1,
+  #item-3:checked ~ #img2 {
     transform: translateX(-100%) scale(75%);
-    filter:brightness(75%) blur(2px);
+    filter: brightness(75%) blur(1px);
     z-index: 1;
   }
-  
-  #item-1:checked ~  #img2, #item-2:checked ~  #img3, #item-3:checked ~  #img1 {
+
+  #item-1:checked ~ #img2,
+  #item-2:checked ~ #img3,
+  #item-3:checked ~ #img1 {
     transform: translateX(100%) scale(75%);
-    filter:brightness(75%) blur(2px);
+    filter: brightness(75%) blur(1px);
     z-index: 2;
   }
-  
-  #item-1:checked ~  #img1, #item-2:checked ~  #img2, #item-3:checked ~  #img3 {
+
+  #item-1:checked ~ #img1,
+  #item-2:checked ~ #img2,
+  #item-3:checked ~ #img3 {
     transform: translatex(0) scale(100%);
-    filter:brightness(100%) blur(0px);
+    filter: brightness(100%) blur(0px);
     z-index: 3;
   }
-  
+
   .size_reference {
     display: block;
     opacity: 0;
@@ -328,6 +334,3 @@ input[type=radio] {
     grid-row: 1;
   }
 }
-
-
-
